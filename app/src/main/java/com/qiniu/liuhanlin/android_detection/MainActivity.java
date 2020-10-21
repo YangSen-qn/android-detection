@@ -1,24 +1,19 @@
 package com.qiniu.liuhanlin.android_detection;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 
 
-import android.app.Activity;
-import android.os.Bundle;
+
+
 import android.text.InputType;
-import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.netease.LDNetDiagnoService.LDNetDiagnoListener;
 import com.netease.LDNetDiagnoService.LDNetDiagnoService;
