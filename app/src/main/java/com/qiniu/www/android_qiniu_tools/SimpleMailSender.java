@@ -25,7 +25,6 @@ public class SimpleMailSender {
 
     /**
      * 以文本格式发送邮件
-     * @param mailInfo 待发送的邮件的信息
      */
 
     public void email( final String s, final String title) {

@@ -17,6 +17,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    signingConfigs {
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
 }
 
 dependencies {
@@ -25,6 +36,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 
     testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     //noinspection GradleCompatible
 //    implementation 'com.android.support:appcompat-v7:23.1.1'
     //noinspection GradleCompatible
@@ -38,6 +51,7 @@ dependencies {
 //    implementation 'com.qiniu:happy-dns:0.2.16'
 //    implementation files('/Users/liuhanlin/qiniuwork/project/android-detection/libs/happy-dns-0.2.4.jar')
     implementation 'com.qiniu:qiniu-android-sdk:8.0.3'
+    androidTestImplementation 'junit:junit:4.12'
 //    implementation files('/Users/liuhanlin/qiniuwork/project/android-detection/libs/qiniu-android-sdk.jar')
 //    implementation files('/Users/liuhanlin/qiniuwork/project/android-detection/libs/httpclient-4.4.1.1.jar')
 }
